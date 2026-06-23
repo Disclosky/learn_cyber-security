@@ -1,0 +1,17 @@
+## Tuesday, 23 June 2026
+Idk how to start with, maybe let's start with picking my first JOB ROLE PATH in HackTheBox?? "Web Penetration Tester"
+  
+ ==Web Requests==
+
+ [>] the first QUESTION, using curl and download the file returned in the specified path
+     - in web browser, it's just a text and suggest me to using cURL
+     - $curl TARGET_IP/download.php
+ [>] 
+ [>] new things:
+     - web server can redirect us from 80 to 443 if web server using HTTPS ptotocol.
+       with 301 Moved Permanently response code  
+     - curl flag : 
+        -s did not print the download/upload status I guess
+	-k skip the certificate checks
+ [>] the third QUESTION can be done by sending any error requests, and cuz it's just a simulation
+     it response and show the version server running
