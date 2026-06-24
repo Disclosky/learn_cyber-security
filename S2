@@ -6,12 +6,23 @@ Idk how to start with, maybe let's start with picking my first JOB ROLE PATH in 
  [>] the first QUESTION, using curl and download the file returned in the specified path
      - in web browser, it's just a text and suggest me to using cURL
      - $curl TARGET_IP/download.php
+ [>] the third QUESTION can be done by sending any error requests,and server response with what version server is running
  [>] 
  [>] new things:
-     - web server can redirect us from 80 to 443 if web server using HTTPS ptotocol.
-       with 301 Moved Permanently response code  
+     - web server can redirect us from 80 to 443 if web server using HTTPS ptotocol. with 301 Moved Permanently response code  
      - curl flag : 
-        -s did not print the download/upload status I guess
-	-k skip the certificate checks
- [>] the third QUESTION can be done by sending any error requests, and cuz it's just a simulation
-     it response and show the version server running
+        -s   did not print the download/upload status, I guess
+	-k   skip the certificate checks
+
+## Wednesday, 24 June 2026
+ [>] Http Headers :
+     - General headers  => both request and response, describe the message. // Date, Connection ...
+     - Entity headers   => both, describe the content. // Content-Type, Media-Type, Content-Length, Content-Encoding, Boundary, etc
+     - Request headers  => do not relate to the content. // Host, User-Agent, Cookie 
+     - Response headers => do not relate to the content. // Server, Set-Cookie
+     - Security headers => used to specify certain rules and policies. // 
+     - custom headers maybe..
+ [>] cURL :  
+        -v 
+        -I   display only the response headers
+        -i   ^ both the headers and response body
