@@ -7,12 +7,11 @@ Idk how to start with, maybe let's start with picking my first JOB ROLE PATH in 
      - in web browser, it's just a text and suggest me to using cURL
      - $curl TARGET_IP/download.php
  [>] the third QUESTION can be done by sending any error requests,and server response with what version server is running
- [>] 
  [>] new things:
      - web server can redirect us from 80 to 443 if web server using HTTPS ptotocol. with 301 Moved Permanently response code  
      - curl flag : 
         -s   did not print the download/upload status, I guess
-	-k   skip the certificate checks
+        -k   skip the certificate checks
 
 ## Wednesday, 24 June 2026
  [>] Http Headers :
