@@ -3,10 +3,11 @@ Idk how to start with, maybe let's start with picking my first JOB ROLE PATH in 
   
  ==Web Requests==
 
- [>] the first QUESTION, using curl and download the file returned in the specified path
+ [.] the first QUESTION, using curl and download the file returned in the specified path
      - in web browser, it's just a text and suggest me to using cURL
      - $curl TARGET_IP/download.php
- [>] the third QUESTION can be done by sending any error requests,and server response with what version server is running
+ [.] the third QUESTION can be done by sending any error requests,and server response with what version server is running
+ [.]
  [>] new things:
      - web server can redirect us from 80(http) to 443(https) if web server using HTTPS ptotocol. with 301 Moved Permanently response code  
      - curl flag : 
@@ -22,14 +23,33 @@ Idk how to start with, maybe let's start with picking my first JOB ROLE PATH in 
      - Security headers => used to specify certain rules and policies. // 
      - custom headers maybe..
  [>] cURL :  
-        -v 
+        -v   verbose, 
         -I   display only the response headers
         -i   ^ both the headers and response body
 
 ## Friday, 26 June 2026
- [>] a question in section 4/8, open the Network tab in web dev-tool after the page loaded, and see the /flag_xxx file. then paste it into the url
- [>] most commonly used request methods:
+ [.] a question in section 4/8, open the Network tab in web dev-tool after the page loaded, and see the /flag_xxx file. then paste it into the url
+ [>] most common used request methods:
      - GET		- PUT	  : create new resources on the server
      - POST		- OPTIONS : returns information about the server
      - HEAD		- PATCH	  : applies partial modifications to the resource
-     - DELETE
+     - DELETE	
+
+## Saturday, 27 June 2026
+ [>] Status Codes
+     - 1xx   provides INFO, and do not affect the proccess of the request
+     - 2xx   returned when the request SUCCEEDS
+     - 3xx   returned when the server REDIRECT the client
+     - 4xx   signifies IMPROPER REQUESTS from client
+     - 5xx   returned when there is a PROBLEM FROM the HTTP SERVER itself
+     
+     commonly seen:
+     - 200 OK
+     - 302 Found       : redirect the client to another URL, like redirecting the user to dashboard after a successful login
+     - 400 Bad Request : malformed requests such as requests with missing line terminators
+     - 403 Forbidden   : signifies that the client doesn't have appropriate access
+     - 404 Not Found
+     - 500 Internal Server Error
+ 
+     note: apart from the standard HTTP codes, various servers and providers such as Cloudflare or AWS implement their own codes
+ [>] 
