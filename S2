@@ -8,7 +8,7 @@ Idk how to start with, maybe let's start with picking my first JOB ROLE PATH in 
      - $curl TARGET_IP/download.php
  [.] the third QUESTION can be done by sending any error requests,and server response with what version server is running
  [.]
- [>] new things:
+ [~] new things:
      - web server can redirect us from 80(http) to 443(https) if web server using HTTPS ptotocol. with 301 Moved Permanently response code  
      - curl flag : 
         -s   did not print the download/upload status, I guess
@@ -52,4 +52,4 @@ Idk how to start with, maybe let's start with picking my first JOB ROLE PATH in 
      - 500 Internal Server Error
  
      note: apart from the standard HTTP codes, various servers and providers such as Cloudflare or AWS implement their own codes
- [>] 
+ [>] HTTP basic Auth
