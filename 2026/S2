@@ -71,7 +71,7 @@ Idk how to start with, maybe let's start with picking my first JOB ROLE PATH in 
 	* Server auth using Basic with user 'admin'
 	> GET / HTTP/1.1
 	> Host: 154.57.164.71:31855
-	> Authorization: Basic YWRtaW46YWRtaW4=		=> we can also using this by using -H, without supplying the credential. cuz this is just a simulation
+	> Authorization: Basic YWRtaW46YWRtaW4=
 	> User-Agent: curl/8.20.0
 	> Accept: */*
 	> ... 
@@ -82,3 +82,30 @@ Idk how to start with, maybe let's start with picking my first JOB ROLE PATH in 
 	
      - maybe, I'll just gonna makes this long output or how I complete the task to another file. But it makes me confused or especially I didn't know what to write in here
 
+## Monday, 29 June 2026
+ [>] Question 1 in section 7/8. Obtain a session cookie through a valid login, and then use the cookie with cURL to search for the flag through a JSON POST request to '/search.php'
+     Authenticate to 154.57.164.63 , with user "admin" and password "admin" 
+     $ curl  http://154.57.164.63:31657/ -v
+        ...
+        <form method="post">			=> need a POST requests method with username and password data to be sent
+            <input type="text" name="username" placeholder="Username" required="required" />
+            <input type="password" name="password" placeholder="Password" required="required" />
+            <button type="submit" class="btn btn-primary btn-block btn-large">Login</button>
+        </form>
+        ...
+     $ curl  -X POST -d 'username=admin&password=admin' http://154.57.164.63:31657/ -v
+	...
+	< Set-Cookie: PHPSESSID=dthnimjmb4l73ud6gg5uc3i0c4; path=/ 
+	...
+     $ curl -X POST -b 'PHPSESSID=dthnimjmb4l73ud6gg5uc3i0c4' http://154.57.164.63:31657/search.php?search=flag
+	Content type must be: application/json
+
+     $ curl -X POST -b 'PHPSESSID=dthnimjmb4l73ud6gg5uc3i0c4' -H 'Content-Type: application/json' http://154.57.164.63:31657/search.php 
+	POST data is empty
+
+     $ curl -X POST -d '{"search":"flag"}' -b 'PHPSESSID=dthnimjmb4l73ud6gg5uc3i0c4' -H 'Content-Type: application/json' http://154.57.164.63:31657/search.php
+	["flag: HTB{xxxx}"]
+ [>] curl: -X   request method like , POST, ...
+	   -H   headers
+	   -d   if we need a data to send
+           -b   cookies		=> still confuse about this format, either we need "{}" or not, and ":" or "=". but maybe I figure it out later...
