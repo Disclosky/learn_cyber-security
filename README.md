@@ -16,4 +16,3 @@ What I have learned so far is :
 - I don't remember, I can't write them down one by one:(
 - and the reality of learning to became a hacker with 0 dollar, and how the technology evolve so fricking fast that I must keep up with it..
 
-let's move on to S2 ...
