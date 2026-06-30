@@ -1,0 +1,28 @@
+Try Hack Me - CSRF Introduction
+Learning Objectives
+ [✓] Understand the basic concept of CSRF attacks
+ [✓] Identify application features that are vulnerable to CSRF
+ [✓] Exploit CSRF using simple HTML and weak tokens 
+ [✓] Understand common practices used to exploit CSRF
+
+##Tuesday, 30 June 2026
+Task 6 : Exploitation over Weak Tokens [✓]
+ - in this task, the goal is to demoting the admin role. the web using a weak csrf token. it is base64 encode from "admin" = "YWRtaW4="
+ - instead of using AttackBox, I used my own machine.
+ - and make the payload like in the task using   nano role.html 
+ - then makes a web server using   python -m http.server 81
+ - then on the target machine we open  http://CONNECTION_IP:81/role.html then just move the cursor to the image. then I got the flag
+
+
+Best practices for testing CSRF.
+
+ - Focus on state-changing requests: Prioritise requests that modify data, such as password changes, email updates, account settings, or financial transactions.
+   These endpoints are the most common targets for CSRF attacks.
+ - Inspect requests for CSRF tokens: Check whether sensitive actions include a CSRF token. If no token exists, or if the token appears static or predictable,
+   the request may be vulnerable. 
+ - Analyse HTTP methods: Sensitive actions should typically use POST requests. If important operations are performed through GET requests,
+   they may be easier to exploit using images or simple links. 
+ - Test the requests outside of the application: Copy the request and try to reproduce it from an external HTML page. If the action succeeds
+   without additional verification,the endpoint is likely vulnerable to CSRF. 
+ - Observe cookie behaviour: Check whether authentication relies only on session cookies. If the application automatically accepts requests containing the session cookie
+   without validating the request origin, CSRF attacks become possible.
