@@ -9,9 +9,9 @@ Learning Objectives
 Task 6 : Exploitation over Weak Tokens [✓]
  - in this task, the goal is to demoting the admin role. the web using a weak csrf token. it is base64 encode from "admin" = "YWRtaW4="
  - instead of using AttackBox, I used my own machine.
- - and make the payload like in the task using   nano role.html 
- - then makes a web server using   python -m http.server 81
- - then on the target machine we open  http://CONNECTION_IP:81/role.html then just move the cursor to the image. then I got the flag
+ - and make the payload like in the task using  $ nano role.html 
+ - then makes a web server using  $ python -m http.server 81
+ - then on the target machine we open  http://ATTACKER_IP:81/role.html then just move the cursor to the image. then I got the flag
 
 
 Best practices for testing CSRF.
