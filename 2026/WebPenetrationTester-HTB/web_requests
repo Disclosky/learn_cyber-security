@@ -126,3 +126,5 @@ Idk how to start with, maybe let's start with picking my first JOB ROLE PATH in 
      $ curl -X DELETE http://TARGET_IP/api.php/city/London 
      $ curl http://TARGET_IP/api.php/city/flag            
 	[{"city_name":"flag","country_name":"HTB{XXXXXXX}"}]
+  
+ https://academy.hackthebox.com/achievement/1729031/35
