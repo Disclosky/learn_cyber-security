@@ -2,9 +2,9 @@
 
 
 Things to noted:
-- `Status: active` → Firewall is on
-- `deny (incoming)` → All INCOMING connections are rejected
-- `allow (outgoing)` → All OUTGOING connections are allowed
+- `Status: active`    → Firewall is on
+- `deny (incoming)`   → All INCOMING connections are rejected
+- `allow (outgoing)`  → All OUTGOING connections are allowed
 - `disabled (routed)` → Can't act like a router
 
 
