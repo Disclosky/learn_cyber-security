@@ -1,11 +1,10 @@
 ## 🔥 UFW = Uncomplicated Firewall
 
-
-Things to noted:<br>
-Status: active		Firewall is on ✅<br>
-deny (incoming)		All INCOMING connections are rejected 🚫<br>
-allow (outgoing)	All OUTGOING connections are allowd✅<br>
-disabled (routed)<br>
+Things to noted:
+- `Status: active` → Firewall is on
+- `deny (incoming)` → All INCOMING connections are rejected
+- `allow (outgoing)` → All OUTGOING connections are allowed
+- `disabled (routed)` → Can't act like a router
 
 Basic Commands:
 ```bash
