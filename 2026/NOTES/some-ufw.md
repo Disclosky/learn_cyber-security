@@ -1,10 +1,12 @@
 ## 🔥 UFW = Uncomplicated Firewall
 
+
 Things to noted:
 - `Status: active` → Firewall is on
 - `deny (incoming)` → All INCOMING connections are rejected
 - `allow (outgoing)` → All OUTGOING connections are allowed
 - `disabled (routed)` → Can't act like a router
+
 
 Basic Commands:
 ```bash
@@ -13,6 +15,8 @@ sudo ufw enable	   # to Activate the firewall
 sudo ufw disable   # to Trun off the firewall
 sudo ufw reset     # Reset to default
 ```
+
+
 Rules
 1. Show Rules
 ```bash
@@ -20,9 +24,9 @@ sudo ufw status numbered
 ```
 2. Add a new rule
 ```bash
-sudo ufw allow 4444/tcp	       # Buka port 4444
-sudo ufw allow 8000/tcp        # Buka port 8000
-sudo ufw allow 9000:9005/tcp   # Buka range port
+sudo ufw allow 4444/tcp	       # open port 4444
+sudo ufw allow 8000/tcp        # open port 8000
+sudo ufw allow 9000:9005/tcp   # open range port
 ....
 ```
 3. Delete a rule
