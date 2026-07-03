@@ -32,7 +32,7 @@ sudo ufw delete allow 4444/tcp
 ```
 
 
-file to _reset_-ufw.sh instantly:
+file to `reset-ufw.sh` instantly:
 ```bash
 
 #!/bin/bash
