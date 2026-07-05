@@ -1,14 +1,7 @@
 ## 🔥 UFW = Uncomplicated Firewall
 
 
-Things to noted:
-- `Status: active`    → Firewall is on
-- `deny (incoming)`   → All incoming connections are rejected
-- `allow (outgoing)`  → All outgoing connections are allowed
-- `disabled (routed)` → Can't act like a router
-
-
-Basic Commands:
+### Basic Commands
 ```bash
 sudo ufw status    # Show status
 sudo ufw enable	   # to Activate the firewall
@@ -16,9 +9,8 @@ sudo ufw disable   # to Trun off the firewall
 sudo ufw reset     # Reset to default
 ```
 
-
-Rules
-1. Show Rules
+### Rules
+1. Show rules
 ```bash
 sudo ufw status numbered
 ```
@@ -35,7 +27,14 @@ sudo ufw allow 9000:9005/tcp   # open range port
 sudo ufw delete allow 4444/tcp
 ```
 
+### Things to noted:
+- `Status: active`    → Firewall is on
+- `deny (incoming)`   → All incoming connections are rejected
+- `allow (outgoing)`  → All outgoing connections are allowed
+- `disabled (routed)` → Can't act like a router
 
+
+---
 file to `reset-ufw.sh` instantly:
 ```bash
 
