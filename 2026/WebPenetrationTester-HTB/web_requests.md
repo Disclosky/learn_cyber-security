@@ -2,7 +2,6 @@
 
 ### Tuesday, 23 June 2026
 Let's start with choose a JOB ROLE PATH in HackTheBox?? **"Web Penetration Tester."**
-  
 
 - The first question in section 1/8.<br>
   "Use curl and download the file returned in the specified path"
@@ -12,12 +11,15 @@ Let's start with choose a JOB ROLE PATH in HackTheBox?? **"Web Penetration Teste
          curl TARGET_IP/download.php
          ```
 - The second question in section 3/8 can also be done by sending any error requests, then server will response with what version of Apache server is running.
-- New things I learned:
-     > Web server can redirect us from 80 (HTTP) to 443(HTTPS) if web server using HTTPS ptotocol, with `301 Moved Permanently` response code.
+- cURL:
+     - `-v`    ⇒ verbose
+     - `-I`    ⇒ to send a HEAD request and only display the response headers.
+     - `-i`    ⇒ to send a HEAD request and display both the headers and response body
+     - `-s`    ⇒ did not print the download/upload status, I guess
 ---
 ### Wednesday, 24 June 2026
 - **HTTP Headers**
-     
+
      | Category |  Request | Response | Used to | Example |
      |---|:---:|:---:|---|---|
      | **General Headers** | ✔ | ✔ | describe message | `Date: Wed, 24 June 2026 10:38:44 GMT` |
@@ -36,15 +38,14 @@ Let's start with choose a JOB ROLE PATH in HackTheBox?? **"Web Penetration Teste
      |    |    |    |    |`Referrer-Policy: origin` |
 
 - **cURL :**  
-     - `-k`    → skip the certificate checks
+     - `-k`    ⇒ skip the certificate checks
 
-     - `-v`    → shows us the full details of the HTTP request and response. 
-     - `-I`    → to send a HEAD request and only display the response headers.
-     - `-i`    → to send a HEAD request and display both the headers and response body
-     - `-H`    → to set our request headers
-     - `-A`    → to set our User-Agent
-     - `-s`    → did not print the download/upload status, I guess
-
+     - `-v`    ⇒ shows us the full details of the HTTP request and response. 
+     - `-I`    ⇒ to send a HEAD request and only display the response headers.
+     - `-i`    ⇒ to send a HEAD request and display both the headers and response body
+     - `-H`    ⇒ to set our request headers
+     - `-A`    ⇒ to set our User-Agent
+     - `-s`    ⇒ did not print the download/upload status, I guess
 ---
 ### Friday, 26 June 2026
 - The question in section 4/8,
@@ -54,11 +55,10 @@ Let's start with choose a JOB ROLE PATH in HackTheBox?? **"Web Penetration Teste
      - `GET`
      - `POST`
      - `HEAD`
-     - `PUT`        → create new resources on the server
+     - `PUT`        ⇒ create new resources on the server
      - `DELETE`	
-     - `OPTIONS`    → returns information about the server
-     - `PATCH`      → applies partial modifications to the resource
-
+     - `OPTIONS`    ⇒ returns information about the server
+     - `PATCH`      ⇒ applies partial modifications to the resource
 ---
 ### Saturday, 27 June 2026
 - Status Codes
@@ -66,17 +66,17 @@ Let's start with choose a JOB ROLE PATH in HackTheBox?? **"Web Penetration Teste
      - `2xx`   returned when the request SUCCEEDS
      - `3xx`   returned when the server REDIRECT the client
      - `4xx`   signifies IMPROPER REQUESTS from client
-     - `5xx`   returned when there is a PROBLEM FROM the HTTP SERVER itself
-     
-     commonly seen:
+     - `5xx`   returned when there is a PROBLEM FROM the HTTP SERVER itself<br>
+
+  &#x21AA; commonly seen:
      - `200 OK`
      - `302 Found`       : redirect the client to another URL, like redirecting the user to dashboard after a successful login
      - `400 Bad Request` : malformed requests such as requests with missing line terminators
      - `403 Forbidden`   : signifies that the client doesn't have appropriate access
      - `404 Not Found`
      - `500 Internal Server Error`
- 
-     >**note:** Apart from the standard HTTP codes, various servers and providers such as Cloudflare or AWS implement their own codes
+
+  >**note:** Apart from the standard HTTP codes, various servers and providers such as Cloudflare or AWS implement their own codes
 
 - HTTP basic Auth
      ```
@@ -114,8 +114,7 @@ Let's start with choose a JOB ROLE PATH in HackTheBox?? **"Web Penetration Teste
 ---
 ### Monday, 29 June 2026
 - Question 1 in section 7/8.<br>
-  "Obtain a session cookie through a valid login, and then use the cookie with cURL to search for the flag through a JSON POST request to `/search.php`."
-     Authenticate to 154.57.164.63 , with user "admin" and password "admin" 
+  \`Obtain a session cookie through a valid login, and then use the cookie with cURL to search for the flag through a JSON POST request to `/search.php`. Authenticate to 154.57.164.63 , with user "admin" and password "admin."\` 
      ```
      $ curl  http://TARGET_IP/ -v
         ...
@@ -140,23 +139,26 @@ Let's start with choose a JOB ROLE PATH in HackTheBox?? **"Web Penetration Teste
 	["flag: HTB{xxxx}"]
 
 - another **CURL** flags:  
-     - `-X`   request method like GET, POST, PUT
-	- `-H`    headers
-     - `-d`    if we need a data to send
-     - `-b`    cookies
-          >still confuse about this formatting..<BR> either we need `{}` or not, and `:` or `=`
+     - `-X`    ⇒ request method like GET, POST, PUT
+	- `-H`    ⇒ headers
+     - `-d`    ⇒ if we need a data to send
+     - `-b`    ⇒ cookies
+          >still confuse about this part..<BR> either I need `{}` or not, and `:` or `=`
 
 ---
 ### Tuesday, 30 June 2026
 - CRUD APIs
-     - Create	POST	Adds the specified data to the database table
-     - Read	GET	Reads the specified entity from the database table
-     - Update	PUT	Updates the data of the specified database table
-     - Delete	DELETE	Removes the specified row from the database table
-     > will be edited on another day..
+     | Operation | HTTP Method |	Description |
+     |---|---|---|
+     | Create | POST	|Adds the specified data to the database table |
+     | Read | GET | Reads the specified entity from the database table |
+     | Update | PUT | Updates the data of the specified database table |
+     |Delete | DELETE | Removes the specified row from the database table |
+     
 - Question 1 in section 8/8.<br>
   "First, try to update any city's name to be 'flag'. Then, delete any city. Once done, search for a city named 'flag' to get the flag."<br>
-     &#x21AA; There's how I complete the Question:
+  
+  &#x21AA; There's how I complete the Question:
      ```
      $ curl http://TARGET_IP/api.php/city/    
 	[{"city_name":"London","country_name":"(UK)"},{"city_name":"Birmingham","country_name":"(UK)"}, ...
