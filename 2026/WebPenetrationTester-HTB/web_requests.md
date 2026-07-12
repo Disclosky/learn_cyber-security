@@ -20,22 +20,22 @@ Let's start with choose a JOB ROLE PATH in HackTheBox?? **"Web Penetration Teste
 ### Wednesday, 24 June 2026
 - **HTTP Headers**
 
-     | Category |  Request | Response | Used to | Example |
-     |---|:---:|:---:|---|---|
-     | **General Headers** | ✔ | ✔ | describe message | `Date: Wed, 24 June 2026 10:38:44 GMT` |
-     |    |    |    |    |`Connection: close` |
-     | **Entity Headers** | ✔ | ✔ | describe the content | `Content-Type: text/html` |
-     |    |    |    |    |`Media-Type: application/pdf` |
-     |    |    |    |    |`boundary="b4e4fbd93540"` |
-     | **Request Headers** | ✔ |  | provide critical metadata about the request | `Host: www.inlanefreight.com` |
-     |    |    |    |    |`Cookie: PHPSESSID=b4e4fbd93540` |
-     |    |    |    |    |`Authorization: BASIC cGFzc3dvcmQK` |
-     | **Response Headers** |  | ✔ |  provide context about the returned data | `Server: Apache/2.2.14 (Win32)` |
-     |    |    |    |    |`Set-Cookie: PHPSESSID=b4e4fbd93540` |
-     |    |    |    |    |`WWW-Authenticate: BASIC realm="localhost"` |
-     | **Security Headers** |  | ✔ |  specify certain rules and policies | `Content-Security-Policy: script-src 'self'` |
-     |    |    |    |    |`Strict-Transport-Security: max-age=31536000` |
-     |    |    |    |    |`Referrer-Policy: origin` |
+     | Category             |  Request | Response | Used to              | Example |
+     |----------------------|:--------:|:--------:|----------------------|---------|
+     | **General Headers**  |     ✔    |     ✔    | describe message     | `Date: Wed, 24 June 2026 10:38:44 GMT` |
+     |                      |          |          |                      |`Connection: close` |
+     | **Entity Headers**   |     ✔    |     ✔    | describe the content | `Content-Type: text/html` |
+     |                      |          |          |                      |`Media-Type: application/pdf` |
+     |                      |          |          |                      |`boundary="b4e4fbd93540"` |
+     | **Request Headers**  |     ✔    |          | provide critical metadata about the request | `Host: www.inlanefreight.com` |
+     |                      |          |          |                      |`Cookie: PHPSESSID=b4e4fbd93540` |
+     |                      |          |          |                      |`Authorization: BASIC cGFzc3dvcmQK` |
+     | **Response Headers** |          |     ✔    | provide context about the returned data | `Server: Apache/2.2.14 (Win32)` |
+     |                      |          |          |                      |`Set-Cookie: PHPSESSID=b4e4fbd93540` |
+     |                      |          |          |                      |`WWW-Authenticate: BASIC realm="localhost"` |
+     | **Security Headers** |          |     ✔    | specify certain rules and policies | `Content-Security-Policy: script-src 'self'` |
+     |                      |          |          |                      |`Strict-Transport-Security: max-age=31536000` |
+     |                      |          |          |                      |`Referrer-Policy: origin` |
 
 - **cURL :**  
      - `-k`    ⇒ skip the certificate checks
@@ -148,12 +148,12 @@ Let's start with choose a JOB ROLE PATH in HackTheBox?? **"Web Penetration Teste
 ---
 ### Tuesday, 30 June 2026
 - CRUD APIs
-     | Operation | HTTP Method |	Description |
-     |---|---|---|
-     | Create | POST	|Adds the specified data to the database table |
-     | Read | GET | Reads the specified entity from the database table |
-     | Update | PUT | Updates the data of the specified database table |
-     |Delete | DELETE | Removes the specified row from the database table |
+     | Operation | HTTP Method | Description |
+     |-----------|-------------|-------------|
+     | Create    | POST	       | Adds the specified data to the database table |
+     | Read      | GET         | Reads the specified entity from the database table |
+     | Update    | PUT         | Updates the data of the specified database table |
+     | Delete    | DELETE      | Removes the specified row from the database table |
      
 - Question 1 in section 8/8.<br>
   "First, try to update any city's name to be 'flag'. Then, delete any city. Once done, search for a city named 'flag' to get the flag."<br>
