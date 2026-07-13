@@ -7,6 +7,7 @@ What I have learned so far :
 - How the web works 
 - VM Linux & Windows installation
 - Operation Systems Basics
+- HTML basic
 - Python and Bash scripting basics
 - Pentesting introduction maybe
 - Some tools like Nmap, Burpsuite, Metasploit, CyberChef etc.
