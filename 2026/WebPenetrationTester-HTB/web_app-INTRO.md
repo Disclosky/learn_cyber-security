@@ -1,3 +1,4 @@
+
 ## INTRODUCTION TO WEB APPLICATIONS
 
 ###  Saturday, 11 July 2026
@@ -68,10 +69,7 @@ Aside from these models, there are other web application models available such a
 
 Furthermore, some web servers can run operating system calls and programs, like IIS ISAPI or PHP-CGI.
 
----
-
-
-
+...
 
 
 ---
@@ -83,4 +81,20 @@ Aside from that. These are some of the other tasks related to front end web appl
 - Visual Concept Web Design
 - User Interface (UI) design
 - User Experience (UX) design
+
+---
+###  Monday, 13 July 2026
+
+These mistakes lead to the **`OWASP Top 10`** vulnerabilities for web applications,
+1.	Broken Access Control
+2.	Cryptographic Failures
+3.	Injection
+4.	Insecure Design
+5.	Security Misconfiguration
+6.	Vulnerable and Outdated Components
+7.	Identification and Authentication Failures
+8.	Software and Data Integrity Failures
+9.	Security Logging and Monitoring Failures
+10.	Server-Side Request Forgery (SSRF)
+
 
