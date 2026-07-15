@@ -32,10 +32,8 @@
     ```
 3. inspecting the file I download from this section before   
     ```
-    ...
     if data == 'debug':
         return jsonify(debug_info())
-    ...
     ```
 4. I don't know what was that and how the script work, but I tried
     ```
