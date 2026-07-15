@@ -7,7 +7,7 @@ Let's start with choose a JOB ROLE PATH in HackTheBox?? **"Web Penetration Teste
   "Use curl and download the file returned in the specified path"
    1. I try it using web browser, and it's just returned a text and suggest me to using cURL
    2. then I try using:
-      ```bash
+      ```
       curl TARGET_IP/download.php
       ```
 **The second question in section 3/8**<br>
