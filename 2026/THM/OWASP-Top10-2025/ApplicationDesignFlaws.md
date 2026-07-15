@@ -31,7 +31,7 @@
     }
     ```
 3. inspecting the file I download from this section before   
-    ```python
+    ```
     ...
     if data == 'debug':
             return jsonify(debug_info())
