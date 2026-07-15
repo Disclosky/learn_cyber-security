@@ -21,7 +21,7 @@
     {
       "error": "415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'."
     }
-    ```    
+    ```
 2.  add a JSON header  
 
     ```
@@ -31,11 +31,13 @@
     }
     ```
 3. inspecting the file I download from this section before   
-    ```python
-    if data == 'debug':
-        return jsonify(debug_info())
-    ```    
-4. I don't know what was that and how the script work, but I tried
+
+   ```
+      if data == 'debug':
+          return jsonify(debug_info())
+
+   ```
+5. I don't know what was that and how the script work, but I tried
     ```
     $ curl -X POST http://10.48.136.93:5003/api/process -H "Content-Type: application/json" -d '{"data":"debug"}'
     {
