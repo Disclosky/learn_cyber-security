@@ -9,8 +9,6 @@ Let's start with choose a JOB ROLE PATH in HackTheBox?? **"Web Penetration Teste
    2. then I try using:
         ```bash
         curl TARGET_IP/download.php
-        ```
-
 **The second question in section 3/8**<br>
   - an also be done by sending any error requests, then server will response with what version of Apache server is running.
 
