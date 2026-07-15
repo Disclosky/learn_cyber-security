@@ -16,7 +16,7 @@
 **Task 3**
 
 1. trying a simple curl
-    ```
+    ```bash
     $ curl -X POST http://10.48.136.93:5003/api/process 
     {
       "error": "415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'."
