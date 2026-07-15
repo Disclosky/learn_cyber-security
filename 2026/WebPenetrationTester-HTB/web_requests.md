@@ -7,9 +7,9 @@ Let's start with choose a JOB ROLE PATH in HackTheBox?? **"Web Penetration Teste
   "Use curl and download the file returned in the specified path"
    1. I try it using web browser, and it's just returned a text and suggest me to using cURL
    2. then I try using:
-      ```
-      curl TARGET_IP/download.php
-      ```
+        ```bash
+        curl TARGET_IP/download.php
+        ```
 **The second question in section 3/8**<br>
   - an also be done by sending any error requests, then server will response with what version of Apache server is running.
 #### cURL:
@@ -82,7 +82,7 @@ Let's start with choose a JOB ROLE PATH in HackTheBox?? **"Web Penetration Teste
   >**note:** Apart from the standard HTTP codes, various servers and providers such as Cloudflare or AWS implement their own codes
 
 #### HTTP basic Auth
-  ```
+```
   $ curl -i TARGET_IP    # -i to display the response header        
   HTTP/1.1 401 Authorization Required
   Date: Sat, 27 Jun 2026 16:35:03 GMT
@@ -105,19 +105,19 @@ Let's start with choose a JOB ROLE PATH in HackTheBox?? **"Web Penetration Teste
   > Authorization: Basic YWRtaW46YWRtaW4=
   > User-Agent: curl/8.20.0
   > Accept: */*
-  > ... 
-  ```
+  > ...
+```
   Honestly idk what to do here, so I try open it using browser and try search something and then in the Network tab of dev-tool,
   it shown the path to search.php<br>
   and finally..
-  ```
+```
   curl http://TARGET_IP/search.php?search=flag -u admin:admin    # it should show the flag 
-  ```
+```
 ---
 ### Monday, 29 June 2026
 **Question 1 in section 7/8.**<br>
   \`Obtain a session cookie through a valid login, and then use the cookie with cURL to search for the flag through a JSON POST request to `/search.php`. Authenticate to 154.57.164.63 , with user "admin" and password "admin."\` 
-  ```
+```
   $ curl  http://TARGET_IP/ -v
      ...
      <form method="post">
@@ -137,7 +137,7 @@ Let's start with choose a JOB ROLE PATH in HackTheBox?? **"Web Penetration Teste
   POST data is empty  
   $ curl -X POST -d '{"search":"flag"}' -b 'PHPSESSID=dthnimjmb4l73ud6gg5uc3i0c4' -H 'Content-Type: application/json' http://TARGET_IP/search.php
   ["flag: HTB{xxxx}"]
-  ```
+```
 
 another **CURL** flags:  
   - `-X`    ⇒ request method like GET, POST, PUT
@@ -159,7 +159,7 @@ another **CURL** flags:
      
 **Question 1 in section 8/8.**<br>
   "First, try to update any city's name to be 'flag'. Then, delete any city. Once done, search for a city named 'flag' to get the flag."
-  ```
+```
   $ curl http://TARGET_IP/api.php/city/    
   [{"city_name":"London","country_name":"(UK)"},{"city_name":"Birmingham","country_name":"(UK)"}, ... 
 
@@ -172,7 +172,7 @@ another **CURL** flags:
     
   $ curl http://TARGET_IP/api.php/city/flag            
   [{"city_name":"flag","country_name":"HTB{XXXXXXX}"}]
-  ```
+```
 
 ---
 [HTB Academy | Web Requests](https://academy.hackthebox.com/achievement/1729031/35)
