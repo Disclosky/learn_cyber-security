@@ -27,5 +27,5 @@ What I have learned so far :
 <br>
 <br>
 
-I'm cooked 💀
+<p align="right">I'm cooked 💀</p>
 <img src="a/b/c/Screenshot_2026-06-23_21_12_19.png" alt="bruhhh" align="right">
