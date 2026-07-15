@@ -12,6 +12,7 @@ Let's start with choose a JOB ROLE PATH in HackTheBox?? **"Web Penetration Teste
         ```
 **The second question in section 3/8**<br>
   - an also be done by sending any error requests, then server will response with what version of Apache server is running.
+
 #### cURL:
   - `-v`    ⇒ verbose
   - `-I`    ⇒ to send a HEAD request and only display the response headers.
