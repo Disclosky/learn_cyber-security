@@ -16,3 +16,16 @@ What I have learned so far :
 
 
 >it doesn't mean I will update this when I learn a new things..
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+I'm cooked 💀
+<img src="a/b/c/Screenshot_2026-06-23_21_12_19.png" alt="bruhhh" align="right">
