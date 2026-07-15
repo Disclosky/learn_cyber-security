@@ -34,7 +34,7 @@ Some common open source web applications include:
   - `OpenCart`
   - `Joomla`
 
-#### Web Application Infrastructure**
+#### Web Application Infrastructure
     
 Web applications can use many different infrastructure setups. These are also called `models`. <br>
 The most common ones can be grouped into the following four types:

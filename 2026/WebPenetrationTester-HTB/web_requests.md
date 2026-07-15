@@ -82,7 +82,8 @@ Let's start with choose a JOB ROLE PATH in HackTheBox?? **"Web Penetration Teste
   >**note:** Apart from the standard HTTP codes, various servers and providers such as Cloudflare or AWS implement their own codes
 
 #### HTTP basic Auth
-```
+
+```bash
   $ curl -i TARGET_IP    # -i to display the response header        
   HTTP/1.1 401 Authorization Required
   Date: Sat, 27 Jun 2026 16:35:03 GMT
@@ -107,17 +108,21 @@ Let's start with choose a JOB ROLE PATH in HackTheBox?? **"Web Penetration Teste
   > Accept: */*
   > ...
 ```
+
   Honestly idk what to do here, so I try open it using browser and try search something and then in the Network tab of dev-tool,
   it shown the path to search.php<br>
   and finally..
-```
+
+```bash
   curl http://TARGET_IP/search.php?search=flag -u admin:admin    # it should show the flag 
 ```
+
 ---
 ### Monday, 29 June 2026
 **Question 1 in section 7/8.**<br>
   \`Obtain a session cookie through a valid login, and then use the cookie with cURL to search for the flag through a JSON POST request to `/search.php`. Authenticate to 154.57.164.63 , with user "admin" and password "admin."\` 
-```
+
+```bash
   $ curl  http://TARGET_IP/ -v
      ...
      <form method="post">
@@ -159,7 +164,8 @@ another **CURL** flags:
      
 **Question 1 in section 8/8.**<br>
   "First, try to update any city's name to be 'flag'. Then, delete any city. Once done, search for a city named 'flag' to get the flag."
-```
+
+```bash
   $ curl http://TARGET_IP/api.php/city/    
   [{"city_name":"London","country_name":"(UK)"},{"city_name":"Birmingham","country_name":"(UK)"}, ... 
 
