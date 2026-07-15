@@ -47,7 +47,7 @@ Many organisations use security measures, such as **SPF**(Sender Policy Framewor
 
 Conducting a phishing test without a formal agreement is illegal. Ethical hackers must strictly follow a authorized legal framework to protect both parties.
 
-**1. The Legal Agreement (Must-Haves)**
+**1. The Legal Agreement**
 
    - Scope of Work (SOW): Defines target employees, authorized methods, and campaign timelines.
    - Rules of Engagement (ROE): Outlines strict boundaries and safety protocols.
