@@ -96,3 +96,5 @@ These mistakes lead to the **`OWASP Top 10`** vulnerabilities for web applicatio
 10.	Server-Side Request Forgery (SSRF)
 
 
+---
+[HTB Academy | Introduction to Web Applications](https://academy.hackthebox.com/achievement/1729031/75)
