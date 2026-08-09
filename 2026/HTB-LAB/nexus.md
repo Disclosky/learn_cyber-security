@@ -1,3 +1,5 @@
+# NEXUS
+
 nmap scan result:
   ```
   PORT   STATE SERVICE VERSION
@@ -28,3 +30,8 @@ refer to the CVE-2026-38526 it vulnerable to Remote Code Execution but I try to 
 oh sometimes we can change the extension using intercept Burpsuite
 
 `systemctl list-timers` I don't know how it works,.. and I'm not be able to obtain root flag right now. I will comeback later..
+
+yup, I figure it out why it was not work for me. It's need me to generate an SSH key pair **locally**. 
+
+-----
+[HTB | Nexus](https://labs.hackthebox.com/achievement/machine/2139280/948)
