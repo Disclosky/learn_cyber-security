@@ -2,14 +2,13 @@
 
 
 1. UNION-based SQL Injection
+    `' UNION SELECT '' WHERE '1'='1` with the password leave it empty.
 
-  `' UNION SELECT '' WHERE '1'='1` with the password leave it empty.
-
-   and it still didn't makes any sense to me
+    and it still didn't makes any sense to me
 
 2. Lack of authorization on the HTTP post method
 
-  `curl -X POST <url>/page/edit/1` 
+   `curl -X POST <url>/page/edit/1` 
 
 3. Blind SQL Injection with conditional responses
 
