@@ -1,6 +1,6 @@
 #### README
 ---
-This repository contains my study notes, especially in the `cybersecurity`.
+This repository contains my self-study notes, especially in the `cybersecurity`.
 
 
 <br>
