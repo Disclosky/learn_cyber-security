@@ -1,4 +1,4 @@
-## 🔥 UFW = Uncomplicated Firewall
+## UFW = Uncomplicated Firewall
 
 
 ### Basic Commands

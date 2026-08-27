@@ -41,9 +41,6 @@ If we feel good and we know we will reach our goal, we will be successful.
 > Optional Exercise:
 Write down the goal you want to achieve with this course as precisely as possible. Try to break it down and describe it in 500 words at most.
 
-I could describe it, but not 500 words
-- I want to be a professional ethical hacker that can helpful to others
-- curiosity - I do not want to ruin anything out of my stupidity and ignorance
-- and ofcourse money
-
 #### Learning Efficiency
+
+..

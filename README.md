@@ -23,4 +23,4 @@ but..
 
 
 I'm cooked 💀
-<img src="a/b/c/Screenshot_2026-06-23_21_12_19.png" alt="bruhhh">
+<img src="media/Screenshot_2026-06-23_21_12_19.png" alt="bruhhh">
